@@ -1,0 +1,142 @@
+﻿@model List<NurseCourse.Models.VUser>
+
+@{
+    ViewBag.Title = "Usuarios";
+}
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.ErrorMessage
+    </div>
+}
+
+<div class="pagetitle">
+    <h1><i class="bi bi-person"></i> Usuarios</h1>
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Inicio</a></li>
+            <li class="breadcrumb-item active">Filtros</li>
+        </ol>
+    </nav>
+</div>
+
+
+<div class="mb-3">
+    <!-- Botón para abrir el modal -->
+    <a asp-controller="User" asp-action="Create" class="btn btn-success">
+        <i class="bi bi-plus-circle"></i> Crear Usuario
+    </a>
+   
+</div>
+@if (Model != null && Model.Count > 0)
+{
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Usuarios</h5>
+            <table class="table ">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apodo</th>
+                        <th scope="col">Última Sesión</th>
+                        <th scope="col">Sesiones</th>
+                        <th scope="col">Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 0; i < Model.Count; i++)
+                    {
+                        var usuario = Model[i];
+                        <tr>
+                            <td><img src="@usuario.picture" alt="Avatar" width="50" height="50" class="rounded-circle" /></td>
+                            <td>@usuario.email</td>
+                            <td>@usuario.name</td>
+                            <td>@usuario.nickname</td>
+                            <td>@usuario.last_login</td>
+                            <td>@usuario.logins_count</td>
+                            <td>
+                                <span class="badge @(usuario.blocked ? "bg-danger" : "bg-success")">
+                                    @(usuario.blocked ? "Bloqueado" : "Activo")
+                                </span>
+                            </td>
+
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn" type="button" id="dropdownMenuButton-@i" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <b>...</b>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton-@i">
+                                        <li>
+                                            <a class="dropdown-item" asp-controller="Roles" asp-action="AssignRole" asp-route-userId="@usuario.user_id" >
+                                                <i class="bi bi-shield-lock"></i> Asignar Rol
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+           
+
+
+            <style>
+                .modal-dialog-custom {
+                    max-width: 90%; 
+                   
+                }
+
+                .modal-content {
+                    height: 90vh;
+                    
+                    overflow-y: auto;
+                }
+            </style>
+
+            <div class="modal fade" id="detailsUserLogModal" tabindex="-1" aria-labelledby="detailsUserLogModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-custom">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="detailsUserLogModalLabel">Log del Usuario</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Aquí se cargará dinámicamente el contenido del log de usuario -->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <p>No se encontraron usuarios.</p>
+}
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#detailsUserLogModal').on('show.bs.modal', function (e) {
+            var button = $(e.relatedTarget);
+            var userId = button.data('user-id');
+
+            $.get('@Url.Action("Details", "User")', { userId: userId }, function (data) {
+                $('#detailsUserLogModal .modal-body').html(data);
+            });
+        });     
+    });
+</script>
+
