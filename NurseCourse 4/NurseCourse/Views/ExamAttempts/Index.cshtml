@@ -1,0 +1,379 @@
+﻿@model IEnumerable<NurseCourse.Models.Course>
+@{
+    var userId = Context.Session.GetInt32("UserId");
+}
+
+<div class="d-flex justify-content-between align-items-center mb-1">
+    <h2 class="text-dark fw-bold">Aprende más sobre temas de tu interés</h2>
+</div>
+<div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 align-items-center my-5 pt-4 pb-4">
+        <div class="col-lg-7">
+            <img class="img-fluid rounded mb-4 mb-lg-0" src="~/images/carousel/item1.jpg" alt="Imagen representativa de los cursos" />
+        </div>
+        <div class="col-lg-5">
+            <h3 class="font-weight-light mb-5">Regístrate en nuevos cursos.</h3>
+            <p>
+                Aprenda más sobre el tema en el que está interesado. Le ofrecemos múltiples opciones al elegir cursos como: Marketing Digital, Ciencia de Datos, Inteligencia Artificial, E-Commerce y Desarrollo.
+                Puede ver los módulos de cada curso, disfrutar de artículos y multimedia para reforzar su aprendizaje y obtener certificaciones reconocidas.
+            </p>
+            <button class="btn btn-outline-primary">Explorar Cursos</button>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <!-- Sección de Cursos Inscritos -->
+    <h2 class="text-dark fw-bold mb-4">Cursos en los que estás inscrito</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        @foreach (var course in Model.Where(c => c.Certificates.Any(cert => cert.UserId == userId)))
+        {
+            bool allModulesApproved = course.Modules != null && course.Modules.All(module =>
+            module.Exams.Any() && module.Exams.All(exam => exam.ExamAttempts.Any(a => a.UserId == userId && a.Score >= 51)));
+
+            <div class="col">
+                <div class="card h-100 bg-dark text-white border-0 shadow opacity-75 position-relative">
+
+                    @if (allModulesApproved)
+                    {
+                        <a href="@Url.Action("GenerateCertificate", "Certificates", new { courseId = course.Id })" class="btn btn-sm btn-outline-success position-absolute top-0 end-0 m-2">
+                            <i class="bi bi-award"></i> Certificado
+                        </a>
+                    }
+
+
+                    <div class="card-body">
+                        <h4 class="card-title text-light">@course.Name</h4>
+                        <p class="card-text mb-2">@course.Description</p>
+                        <div class="mb-2">
+                            <span class="badge bg-success">Certificación Disponible</span>
+                            <span class="badge bg-info">Duración: 10 horas</span>
+                            <span class="badge bg-warning text-dark">Nivel: Intermedio</span>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-sm btn-outline-success" disabled>
+                                <i class="bi bi-check-circle"></i> Inscrito
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="accordion accordion-flush" id="courseAccordion-@course.Id">
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header" id="heading-@course.Id">
+                                <button class="accordion-button collapsed text-white bg-dark bg-opacity-50 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-@course.Id" aria-expanded="false" aria-controls="collapse-@course.Id">
+                                    <i class="bi bi-chevron-down"></i> Ver Módulos
+                                </button>
+                            </h2>
+                            <div id="collapse-@course.Id" class="accordion-collapse collapse" aria-labelledby="heading-@course.Id" data-bs-parent="#courseAccordion-@course.Id">
+                                <div class="accordion-body bg-dark bg-opacity-50">
+                                    @if (course.Modules != null && course.Modules.Any())
+                                    {
+                                        <ul class="list-group list-group-flush">
+                                            @foreach (var module in course.Modules)
+                                            {
+                                                // Estado del módulo (Aprobado, Reprobado, En curso, Teórico)
+                                                bool allPassed = module.Exams.Any() && module.Exams.All(exam => exam.ExamAttempts.Any(a => a.UserId == userId && a.Score >= 51));
+                                                bool failed = module.Exams.Any() && module.Exams.Any(exam => exam.ExamAttempts.Where(a => a.UserId == userId).Count(a => a.Score < 51) >= 2);
+                                                bool inProgress = module.Exams.Any() && !allPassed && !failed;
+                                                bool isTheoretical = !module.Exams.Any();
+
+                                                string moduleStatus = isTheoretical ? "Teórico" : failed ? "Reprobado" : allPassed ? "Aprobado" : "En curso";
+                                                string badgeClass = isTheoretical ? "badge-secondary" : failed ? "badge-danger" : allPassed ? "badge-success" : "badge-warning";
+
+                                                <li class="list-group-item bg-dark bg-opacity-50 text-white d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <h6 class="fw-bold text-light">@module.Name</h6> <div class="badge @badgeClass me-2">@moduleStatus</div>
+                                                        <p class="mb-1">@module.Description</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <a class="btn btn-sm btn-outline-light" href="@Url.Action("Details", "ExamAttempts", new { id = module.Id })">
+                                                            <i class="bi bi-eye"></i> Ver Detalles
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            }
+                                        </ul>
+                                    }
+                                    else
+                                    {
+                                        <p class="text-muted">Este curso aún no tiene módulos asignados.</p>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <!-- Sección de Cursos No Inscritos -->
+    <h2 class="text-dark fw-bold mb-4 mt-5">Cursos disponibles para inscripción</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        @foreach (var course in Model.Where(c => !c.Certificates.Any(cert => cert.UserId == userId)))
+        {
+            <input type="hidden" id="userId" value="@Context.Session.GetInt32("UserId")">
+            <div class="col">
+                <div class="card h-100 bg-dark text-white border-0 shadow opacity-75">
+                    <div class="card-body">
+                        <h4 class="card-title text-light">@course.Name</h4>
+                        <p class="card-text mb-2">@course.Description</p>
+                        <div class="mb-2">
+                            <span class="badge bg-success">Certificación Disponible</span>
+                            <span class="badge bg-info">Duración: 10 horas</span>
+                            <span class="badge bg-warning text-dark">Nivel: Intermedio</span>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-sm btn-outline-primary" onclick="confirmEnrollment('@course.Id')">
+                                <i class="bi bi-journal-plus"></i> Inscribirse
+                            </button>
+                        </div>
+                    </div>
+                    <div class="accordion accordion-flush" id="courseAccordion-@course.Id">
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header" id="heading-@course.Id">
+                                <button class="accordion-button collapsed text-white bg-dark bg-opacity-50 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-@course.Id" aria-expanded="false" aria-controls="collapse-@course.Id">
+                                    <i class="bi bi-chevron-down"></i> Ver Módulos
+                                </button>
+                            </h2>
+                            <div id="collapse-@course.Id" class="accordion-collapse collapse" aria-labelledby="heading-@course.Id" data-bs-parent="#courseAccordion-@course.Id">
+                                <div class="accordion-body bg-dark bg-opacity-50">
+                                    @if (course.Modules != null && course.Modules.Any())
+                                    {
+                                        <ul class="list-group list-group-flush">
+                                            @foreach (var module in course.Modules)
+                                            {
+                                                <li class="list-group-item bg-dark bg-opacity-50 text-white d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <h6 class="fw-bold text-light">@module.Name</h6>
+                                                        <p class="mb-1">@module.Description</p>
+                                                    </div>
+                                                </li>
+                                            }
+                                        </ul>
+                                    }
+                                    else
+                                    {
+                                        <p class="text-muted">Este curso aún no tiene módulos asignados.</p>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+</div>
+
+@if (ViewBag.ShowRegistrationModal != null && ViewBag.ShowRegistrationModal)
+{
+    <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registrationModalLabel">Registro de Usuario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form method="post" action="@Url.Action("RegisterUser", "Users")">
+                        <h5 class="mb-3">Datos Personales</h5>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="firstName" name="FirstName" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="lastName" name="LastName" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="idNumber" class="form-label">Número de Identificación</label>
+                                <input type="text" class="form-control" id="idNumber" name="IdNumber" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="gender" class="form-label">Género</label>
+                                <select class="form-select" id="gender" name="Gender" required>
+                                    <option value="M">Masculino</option>
+                                    <option value="F">Femenino</option>
+                                    <option value="O">Otro</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="birthDate" class="form-label">Fecha de Nacimiento</label>
+                                <input type="date" class="form-control" id="birthDate" name="BirthDate" required onchange="calculateAge()">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="age" class="form-label">Edad</label>
+                                <input type="number" class="form-control" id="age" name="Age" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="countryOfOrigin" class="form-label">País de Origen</label>
+                                <input type="text" class="form-control" id="countryOfOrigin" name="CountryOfOrigin" placeholder="Escriba el país" list="countryList" required>
+                                <datalist id="countryList"></datalist>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="cityOfOrigin" class="form-label">Ciudad de Origen</label>
+                                <input type="text" class="form-control" id="cityOfOrigin" name="CityOfOrigin" placeholder="Escriba la ciudad" list="cityList" required>
+                                <datalist id="cityList"></datalist>
+                            </div>
+                        </div>
+
+                        <h5 class="mb-3">Datos Profesionales</h5>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="occupation" class="form-label">Ocupación</label>
+                                <input type="text" class="form-control" id="occupation" name="Occupation" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="specifyOccupation" class="form-label">Especificar Ocupación (opcional)</label>
+                                <input type="text" class="form-control" id="specifyOccupation" name="SpecifyOccupation">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="healthProfession" class="form-label">Profesión de Salud (opcional)</label>
+                                <input type="text" class="form-control" id="healthProfession" name="HealthProfession">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="educationLevel" class="form-label">Nivel de Educación</label>
+                                <select class="form-select" id="educationLevel" name="EducationLevel">
+                                    <option value="">Seleccione</option>
+                                    <option value="Primaria">Primaria</option>
+                                    <option value="Secundaria">Secundaria</option>
+                                    <option value="Técnico">Técnico</option>
+                                    <option value="Universitario">Universitario</option>
+                                    <option value="Postgrado">Postgrado</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="institution" class="form-label">Institución</label>
+                                <input type="text" class="form-control" id="institution" name="Institution">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="workplace" class="form-label">Lugar de Trabajo</label>
+                                <input type="text" class="form-control" id="workplace" name="Workplace">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function calculateAge() {
+            const birthDate = new Date(document.getElementById('birthDate').value);
+            const today = new Date();
+            let age = today.getFullYear() - birthDate.getFullYear();
+            const monthDiff = today.getMonth() - birthDate.getMonth();
+            if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            }
+            document.getElementById('age').value = age > 0 ? age : '';
+        }
+
+        $(document).ready(function () {
+            $('#registrationModal').modal('show');
+
+            // Cargar los países al cargar la página
+            $.get('https://restcountries.com/v3.1/all', function (data) {
+                const countryList = $('#countryList');
+                data.forEach(country => {
+                    countryList.append(`<option value="${country.name.common}">`);
+                });
+            });
+
+            // Autocompletado de ciudades con un evento en el campo de ciudad
+            $('#cityOfOrigin').on('input', function () {
+                const query = $(this).val();
+                if (query.length >= 3) {
+                    $.get(`http://api.geonames.org/searchJSON?q=${query}&maxRows=10&username=YOUR_USERNAME`, function (data) {
+                        const cityList = $('#cityList');
+                        cityList.empty(); // Limpiar la lista anterior
+                        data.geonames.forEach(city => {
+                            cityList.append(`<option value="${city.name}, ${city.countryName}">`);
+                        });
+                    });
+                }
+            });
+        });
+    </script>
+}
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    function confirmEnrollment(courseId) {
+        Swal.fire({
+            title: '¿Estás seguro?',
+            text: "¿Quieres inscribirte a este curso?",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Sí, inscribirme',
+            cancelButtonText: 'Cancelar'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                enrollInCourse(courseId);
+            }
+        });
+    }
+
+    function enrollInCourse(courseId) {
+        const userId = document.getElementById('userId').value;
+
+        if (!userId) {
+            Swal.fire('Error', 'Debes iniciar sesión antes de inscribirte.', 'error');
+            return;
+        }
+
+        $.ajax({
+            url: '@Url.Action("Create", "Certificates")',
+            type: 'POST',
+            data: {
+                UserId: userId,
+                CourseId: courseId
+            },
+            success: function (response) {
+                Swal.fire('Inscripción exitosa', 'Te has inscrito al curso exitosamente.', 'success');
+                window.location.reload()
+            },
+            error: function () {
+                Swal.fire('Error', 'Ocurrió un error al intentar inscribirse.', 'error');
+            }
+        });
+    }
+</script>
+
+
+<!-- Estilos adicionales -->
+<style>
+    .card {
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+    }
+
+    .card-body {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .accordion-button {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+
+    .btn-outline-primary, .btn-outline-light {
+        border-radius: 20px;
+    }
+
+    .bi-chevron-down {
+        transition: transform 0.3s ease;
+    }
+
+    .accordion-button:not(.collapsed) .bi-chevron-down {
+        transform: rotate(180deg);
+    }
+</style>

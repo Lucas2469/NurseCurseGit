@@ -1,0 +1,137 @@
+﻿@model IEnumerable<NurseCourse.Models.Module>
+
+@{
+    ViewData["Title"] = "Index";
+    var groupedModules = Model.GroupBy(m => new { m.Course.Id, m.Course.Name, m.Course.Description });
+}
+<h2>Modulos</h2>
+<div class="container px-4 px-lg-5">
+    <!-- Heading Row-->
+    <div class="row gx-4 gx-lg-5 align-items-center my-5 pt-4 pb-4">
+        <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="~/images/carousel/item1.jpg" alt="..." /></div>
+        <div class="col-lg-5">
+            <h3 class="font-weight-light mb-5">Registrese en nuevos cursos.</h3>
+            <p>Aprenda mas sobre el tema en el que used esta interesado le ofrecemos multiples opciones al elegir cursos desde: Marketing Digital, Ciencia de Datos, Inteligencia artificial, E-Comerce Desarrolllo.
+                Puede ver los Modulos de cada curso, disfrutar de articulos y multimedia para reforzar su aprendizaje.
+            </p>
+        </div>
+    </div>
+</div>
+
+<p>
+    <a class="btn btn-outline-success" asp-action="Create">Agregar Modulo</a>
+</p>
+
+<!-- Sección de Cursos y Módulos -->
+<div class="container" style="padding: 15px 10px;">
+    @foreach (var courseGroup in groupedModules)
+    {
+        <div class="mb-5">
+            <div class="d-flex justify-content-between align-items-center">
+                <h3 class="text-dark">@courseGroup.Key.Name</h3>
+                <!-- Botón que abre el modal -->
+                <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#addModuleModal-@courseGroup.Key.Id">Agregar Módulo</button>
+            </div>
+            <p class="text-dark">@courseGroup.Key.Description</p>
+            <div class="row">
+                @foreach (var item in courseGroup)
+                {
+                    <div class="col-12 col-md-6 mb-4">
+                        <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.4); color: white;">
+                            <div class="card-body">
+                                <h4 class="card-title text-light">Módulo</h4>
+                                <hr class="bg-light" />
+                                <dl class="row">
+                                    <dt class="col-sm-4">Nombre</dt>
+                                    <dd class="col-sm-8">@Html.DisplayFor(modelItem => item.Name)</dd>
+
+                                    <dt class="col-sm-4">Descripción</dt>
+                                    <dd class="col-sm-8">@Html.DisplayFor(modelItem => item.Description)</dd>
+                                </dl>
+                            </div>
+                            <div class="card-footer text-right" style="background-color: rgba(0, 0, 0, 0.5);">
+                                <a class="btn btn-outline-light" asp-action="Edit" asp-route-id="@item?.Id">Editar</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- Modal para agregar un nuevo módulo -->
+        <div class="modal fade" id="addModuleModal-@courseGroup.Key.Id" tabindex="-1" role="dialog" aria-labelledby="addModuleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addModuleModalLabel">Agregar Módulo para @courseGroup.Key.Name</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="form-add-module-@courseGroup.Key.Id">
+                            <div class="form-group">
+                                <label for="name-@courseGroup.Key.Id">Nombre</label>
+                                <input id="name-@courseGroup.Key.Id" name="Name" type="text" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="description-@courseGroup.Key.Id">Descripción</label>
+                                <input id="description-@courseGroup.Key.Id" name="Description" type="text" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="pdfPath-@courseGroup.Key.Id">PDF Path</label>
+                                <input id="pdfPath-@courseGroup.Key.Id" name="PdfPath" type="text" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="videoPath-@courseGroup.Key.Id">Video Path</label>
+                                <input id="videoPath-@courseGroup.Key.Id" name="VideoPath" type="text" class="form-control" />
+                            </div>
+                            <input type="hidden" name="CourseId" id="courseId-@courseGroup.Key.Id" value="@courseGroup.Key.Id" />
+                            <div class="form-group text-right">
+                                <button type="button" class="btn btn-primary" onclick="createModule(@courseGroup.Key.Id)">Crear</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function createModule(courseId) {
+                var formId = "#form-add-module-" + courseId;
+
+                var moduleData = {
+                    Name: $(formId + ' [name="Name"]').val(),
+                    Description: $(formId + ' [name="Description"]').val(),
+                    PdfPath: $(formId + ' [name="PdfPath"]').val(),
+                    VideoPath: $(formId + ' [name="VideoPath"]').val(),
+                    CourseId: courseId
+                };
+
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("CreatedByCourse", "Modules")', 
+                    data: JSON.stringify(moduleData),
+                    contentType: "application/json; charset=utf-8",
+                    success: function (response) {
+                        if (response.success) {
+                            alert(response.message);
+                            location.reload();
+                        } else {
+                            alert("Error: " + response.message);
+                        }
+                    },
+                    error: function () {
+                        alert("Error en la conexión.");
+                    }
+                });
+            }
+        </script>
+    }
+</div>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+

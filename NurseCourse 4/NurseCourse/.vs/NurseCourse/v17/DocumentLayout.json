@@ -1,0 +1,877 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\nursecourse.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:nursecourse.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\services\\auth0service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:services\\auth0service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\controllers\\pdfcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:controllers\\pdfcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\viewmodels\\userdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:viewmodels\\userdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\views\\user\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:views\\user\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\views\\user\\_userlogdetailspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:views\\user\\_userlogdetailspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\views\\roles\\assignrole.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:views\\roles\\assignrole.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\viewmodels\\userprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:viewmodels\\userprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\controllers\\questionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:controllers\\questionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\dto\\questiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:dto\\questiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\dto\\optiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:dto\\optiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\dto\\examdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:dto\\examdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\models\\vuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:models\\vuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\models\\userlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:models\\userlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\support\\samesiteservicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:support\\samesiteservicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\viewmodels\\auth0token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:viewmodels\\auth0token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\wwwroot\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:wwwroot\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\viewmodels\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:viewmodels\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\viewmodels\\registrationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:viewmodels\\registrationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\controllers\\certificatescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:controllers\\certificatescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\models\\certificate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:models\\certificate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\models\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:models\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\models\\examattempt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:models\\examattempt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\models\\modularcoursedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:models\\modularcoursedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\models\\module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:models\\module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\models\\option.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:models\\option.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\controllers\\optionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:controllers\\optionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\controllers\\modulescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:controllers\\modulescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\controllers\\examattemptscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:controllers\\examattemptscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\controllers\\examscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:controllers\\examscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\views\\modules\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:views\\modules\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\views\\examattempts\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:views\\examattempts\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\views\\examattempts\\evaluateexam.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:views\\examattempts\\evaluateexam.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|c:\\users\\lucas\\desktop\\nursecourse 4\\nursecourse\\views\\examattempts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31EEAB8C-0F5D-4C12-8919-5E19E243CF45}|NurseCourse.csproj|solutionrelative:views\\examattempts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NurseCourse",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\NurseCourse.csproj",
+              "RelativeDocumentMoniker": "NurseCourse.csproj",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\NurseCourse.csproj",
+              "RelativeToolTip": "NurseCourse.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-29T16:26:52.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-12T18:33:11.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Auth0Service.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Services\\Auth0Service.cs",
+              "RelativeDocumentMoniker": "Services\\Auth0Service.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Services\\Auth0Service.cs",
+              "RelativeToolTip": "Services\\Auth0Service.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T00:20:39.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PDFController.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Controllers\\PDFController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PDFController.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Controllers\\PDFController.cs",
+              "RelativeToolTip": "Controllers\\PDFController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAywBwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T00:07:59.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Views\\User\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\Create.cshtml",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Views\\User\\Create.cshtml",
+              "RelativeToolTip": "Views\\User\\Create.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-18T00:19:14.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RolesController.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Controllers\\RolesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RolesController.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Controllers\\RolesController.cs",
+              "RelativeToolTip": "Controllers\\RolesController.cs",
+              "ViewState": "AgIAACYBAAAAAAAAAADwv5sAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T18:31:29.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-15T18:20:25.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAIwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T18:34:16.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Views\\User\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Views\\User\\Edit.cshtml",
+              "RelativeToolTip": "Views\\User\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-18T00:19:18.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Views\\User\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\Index.cshtml",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Views\\User\\Index.cshtml",
+              "RelativeToolTip": "Views\\User\\Index.cshtml",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-18T00:05:13.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAAAkBAAAALuBJ0G4WwBUAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T00:03:34.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserDetailsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\ViewModels\\UserDetailsViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\UserDetailsViewModel.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\ViewModels\\UserDetailsViewModel.cs",
+              "RelativeToolTip": "ViewModels\\UserDetailsViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T18:31:29.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_UserLogDetailsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Views\\User\\_UserLogDetailsPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\_UserLogDetailsPartial.cshtml",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Views\\User\\_UserLogDetailsPartial.cshtml",
+              "RelativeToolTip": "Views\\User\\_UserLogDetailsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-18T00:19:11.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AssignRole.cshtml",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Views\\Roles\\AssignRole.cshtml",
+              "RelativeDocumentMoniker": "Views\\Roles\\AssignRole.cshtml",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Views\\Roles\\AssignRole.cshtml",
+              "RelativeToolTip": "Views\\Roles\\AssignRole.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-12T18:31:29.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserProfileViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\ViewModels\\UserProfileViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\UserProfileViewModel.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\ViewModels\\UserProfileViewModel.cs",
+              "RelativeToolTip": "ViewModels\\UserProfileViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T18:33:10.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T18:31:29.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "jquery.validate.unobtrusive.min.js",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+              "RelativeDocumentMoniker": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+              "RelativeToolTip": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqFQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-18T00:58:06.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "QuestionsController.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Controllers\\QuestionsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\QuestionsController.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Controllers\\QuestionsController.cs",
+              "RelativeToolTip": "Controllers\\QuestionsController.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T00:07:42.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OptionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\DTO\\OptionDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\OptionDTO.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\DTO\\OptionDTO.cs",
+              "RelativeToolTip": "DTO\\OptionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T00:22:02.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ExamDTO.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\DTO\\ExamDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\ExamDTO.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\DTO\\ExamDTO.cs",
+              "RelativeToolTip": "DTO\\ExamDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T00:22:03.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CoursesController.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Controllers\\CoursesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CoursesController.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Controllers\\CoursesController.cs",
+              "RelativeToolTip": "Controllers\\CoursesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T18:31:29.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T19:00:48.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "QuestionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\DTO\\QuestionDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\QuestionDTO.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\DTO\\QuestionDTO.cs",
+              "RelativeToolTip": "DTO\\QuestionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T00:22:01.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "VUser.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Models\\VUser.cs",
+              "RelativeDocumentMoniker": "Models\\VUser.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Models\\VUser.cs",
+              "RelativeToolTip": "Models\\VUser.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T18:31:29.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserLog.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Models\\UserLog.cs",
+              "RelativeDocumentMoniker": "Models\\UserLog.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Models\\UserLog.cs",
+              "RelativeToolTip": "Models\\UserLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T00:21:15.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T18:31:29.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "SameSiteServiceCollectionExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Support\\SameSiteServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "Support\\SameSiteServiceCollectionExtensions.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Support\\SameSiteServiceCollectionExtensions.cs",
+              "RelativeToolTip": "Support\\SameSiteServiceCollectionExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T18:33:04.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Auth0Token.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\ViewModels\\Auth0Token.cs",
+              "RelativeDocumentMoniker": "ViewModels\\Auth0Token.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\ViewModels\\Auth0Token.cs",
+              "RelativeToolTip": "ViewModels\\Auth0Token.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T18:33:07.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-12T18:34:19.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-12T18:34:20.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "favicon.ico - Icon [32x32, 32 bits, BMP]",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\wwwroot\\favicon.ico",
+              "RelativeDocumentMoniker": "wwwroot\\favicon.ico",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\wwwroot\\favicon.ico - Icon [32x32, 32 bits, BMP]",
+              "RelativeToolTip": "wwwroot\\favicon.ico - Icon [32x32, 32 bits, BMP]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
+              "WhenOpened": "2025-04-18T00:42:00.845Z",
+              "EditorCaption": " - Icon [32x32, 32 bits, BMP]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "UserViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\ViewModels\\UserViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\UserViewModel.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\ViewModels\\UserViewModel.cs",
+              "RelativeToolTip": "ViewModels\\UserViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T00:19:26.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "RegistrationViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\ViewModels\\RegistrationViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\RegistrationViewModel.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\ViewModels\\RegistrationViewModel.cs",
+              "RelativeToolTip": "ViewModels\\RegistrationViewModel.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T18:34:33.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CertificatesController.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Controllers\\CertificatesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CertificatesController.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Controllers\\CertificatesController.cs",
+              "RelativeToolTip": "Controllers\\CertificatesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T19:00:51.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Certificate.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Models\\Certificate.cs",
+              "RelativeDocumentMoniker": "Models\\Certificate.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Models\\Certificate.cs",
+              "RelativeToolTip": "Models\\Certificate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T00:21:59.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "Models\\Course.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Models\\Course.cs",
+              "RelativeToolTip": "Models\\Course.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T00:21:58.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T00:21:57.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Exam.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Models\\Exam.cs",
+              "RelativeDocumentMoniker": "Models\\Exam.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Models\\Exam.cs",
+              "RelativeToolTip": "Models\\Exam.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T00:21:55.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ExamAttempt.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Models\\ExamAttempt.cs",
+              "RelativeDocumentMoniker": "Models\\ExamAttempt.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Models\\ExamAttempt.cs",
+              "RelativeToolTip": "Models\\ExamAttempt.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T00:21:53.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ModularCourseDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Models\\ModularCourseDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\ModularCourseDbContext.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Models\\ModularCourseDbContext.cs",
+              "RelativeToolTip": "Models\\ModularCourseDbContext.cs",
+              "ViewState": "AgIAAO0AAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T00:21:34.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Module.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Models\\Module.cs",
+              "RelativeDocumentMoniker": "Models\\Module.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Models\\Module.cs",
+              "RelativeToolTip": "Models\\Module.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T00:21:32.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Option.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Models\\Option.cs",
+              "RelativeDocumentMoniker": "Models\\Option.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Models\\Option.cs",
+              "RelativeToolTip": "Models\\Option.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T00:21:31.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Question.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Models\\Question.cs",
+              "RelativeDocumentMoniker": "Models\\Question.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Models\\Question.cs",
+              "RelativeToolTip": "Models\\Question.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T00:21:30.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "Models\\Role.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Models\\Role.cs",
+              "RelativeToolTip": "Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T00:21:19.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "OptionsController.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Controllers\\OptionsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OptionsController.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Controllers\\OptionsController.cs",
+              "RelativeToolTip": "Controllers\\OptionsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T00:08:01.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ModulesController.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Controllers\\ModulesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ModulesController.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Controllers\\ModulesController.cs",
+              "RelativeToolTip": "Controllers\\ModulesController.cs",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAIwEcAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T18:31:29.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ExamAttemptsController.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Controllers\\ExamAttemptsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ExamAttemptsController.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Controllers\\ExamAttemptsController.cs",
+              "RelativeToolTip": "Controllers\\ExamAttemptsController.cs",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAIwHIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T18:31:29.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ExamsController.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Controllers\\ExamsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ExamsController.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Controllers\\ExamsController.cs",
+              "RelativeToolTip": "Controllers\\ExamsController.cs",
+              "ViewState": "AgIAADkBAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T00:08:23.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T19:00:55.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Views\\Modules\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Modules\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Views\\Modules\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Modules\\Edit.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACIAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-12T18:31:29.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Views\\ExamAttempts\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\ExamAttempts\\Details.cshtml",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Views\\ExamAttempts\\Details.cshtml",
+              "RelativeToolTip": "Views\\ExamAttempts\\Details.cshtml",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAFAAAABnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-12T18:31:29.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "EvaluateExam.cshtml",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Views\\ExamAttempts\\EvaluateExam.cshtml",
+              "RelativeDocumentMoniker": "Views\\ExamAttempts\\EvaluateExam.cshtml",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Views\\ExamAttempts\\EvaluateExam.cshtml",
+              "RelativeToolTip": "Views\\ExamAttempts\\EvaluateExam.cshtml",
+              "ViewState": "AQIAAJAAAAAAAAAAAAAgwKoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-12T18:31:29.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Views\\ExamAttempts\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\ExamAttempts\\Index.cshtml",
+              "ToolTip": "C:\\Users\\LUCAS\\Desktop\\NurseCourse 4\\NurseCourse\\Views\\ExamAttempts\\Index.cshtml",
+              "RelativeToolTip": "Views\\ExamAttempts\\Index.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAEwBUAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-12T18:31:29.974Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
